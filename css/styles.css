@@ -147,3 +147,26 @@ text-align: justify;
 .second-link {
     color: #ba5f3bcc;
 }      
+
+/* Estilo do botão de tela cheia */
+#fullscreenBtn {
+    display: block;
+    margin: 10px 0 10px auto;
+    background-color: #9b9b9b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#fullscreenBtn:hover {
+    background-color: #bd4738;
+}
+
+/* Estilo do contêiner do iframe */
+.iframe-container {
+    margin-top: 5px; /* Adiciona um espaçamento entre o botão e o iframe */
+    width: 100%;
+    height: 100%;
+}
