@@ -1,7 +1,5 @@
 /* ESSE É UM ARQUIVO SEPARADO QUE SERVE PARA IMPOR O ESTILO DO CÓDIGO */ 
 
-/* Esse bloco de código serve para identificar a cor do botão para a parte do TCC */
-
 .btn-custom {
     background-color: #ba5e3b;
     color: #fff;
@@ -52,7 +50,6 @@
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
-    /* Proporção de 16:9 para o iframe */
 }
 
 .iframe-container iframe {
@@ -64,64 +61,13 @@
     border: 0;
 }
 
-.titulo-artigo {
-    font-weight: normal;
-    /* Isso remove o negrito */
+.fa-ul {
+text-align: justify;
 }
-
 
 .sobre-mim {
-    font-size: auto
-}
-/* DAQUI PRA FRENTE É DA GALERIA */
-
-.gallery {
-    display: inline-block;
-    position: relative;
-    margin: 10px;
-    width: 400px; /* Define a largura da imagem */
-    height: auto; /* Define a altura da imagem */
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s;
-}
-
-.gallery .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: opacity 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-}
-
-.gallery .overlay .text {
-    color: #f1f1f1;
-    font-size: 16px;
-    text-align: center;
-}
-
-.gallery a:hover .overlay {
-    opacity: 1;
-}
-
-.gallery a:hover img {
-    opacity: 0.7;
-    transform: scale(1.05);
+    font-size: auto;
+    text-align: justify;
 }
 
 h2.mb-5 {
@@ -130,9 +76,74 @@ h2.mb-5 {
 
 h3.mb-3 {
     margin-bottom: 1rem;
+}    
+
+/* Parte para o novo escopo de layout */
+
+.project {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 50px 0;
 }
 
-p {
-    text-align: left;
-    margin: 0 0 10px;
+.project-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
 }
+
+.project-img img {
+    width: 275px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-info {
+    margin-left: 20px;
+    max-width: 60%;
+}
+
+.project-title {
+font-size: 1.8rem;
+font-weight: bold;
+margin-bottom: 10px;
+text-align: justify;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.project-technologies {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.project-img img:hover {
+    transform: scale(1.05);
+}     
+
+/* Parte dos links */
+.project-links {
+    display: flex;
+    align-items: baseline; 
+    gap: 20px; 
+}
+
+.project-link {
+    font-size: 0.95rem;
+    color: #ba5e3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.second-link {
+    color: #ba5f3bcc;
+}      
