@@ -106,7 +106,7 @@
         <h2 class="mb-5">Importação e Exportação do Brasil</h2>
 
         <p class="sobre-mim mb-4">
-          Read the project documentation below the dashboard content 👇.
+          👇 Read the project documentation below the dashboard content.
         </p>
 
         <!-- Botão de Tela Cheia -->
@@ -115,7 +115,7 @@
         </button>
 
         <!-- Iframe do Power BI -->
-        <div class="iframe-container mb-4">
+        <div class="iframe-container mb-5">
           <!-- Margem adicionada aqui -->
           <iframe
             title="IMPORTAÇÃO E EXPORTAÇÃO DO BRASIL"
@@ -123,40 +123,58 @@
             height="1060"
             src="https://app.powerbi.com/view?r=eyJrIjoiNTJhN2QzYzMtMzY2Yi00ZmMyLWE4OTMtMThhZjE3MWVlMDJjIiwidCI6IjliZTg5NmYwLWNjMWMtNGQ5Yy1hOWI1LWE4ZTMyM2Y0YzhhOCIsImMiOjh9"
             id="powerbiIframe"
+            allowfullscreen="True"
           ></iframe>
         </div>
 
         <!-- Objetivo -->
-        <h4 class="mb-2">▸ Objective</h4>
-        <!-- A margm foi alterada de 1 para 2 -->
-        <p class="sobre-mim mb-4">
+        <h4 class="mb-3">▸ Objective</h4>
+        <p class="sobre-mim mb-5">
           To analyze Brazil's imports and exports to identify trends, major
           trading partners, and sectors most affected over the years.
         </p>
 
         <!-- Escopo -->
-        <h4 class="mb-2">▸ Scope</h4>
-        <p class="sobre-mim mb-4">
+        <h4 class="mb-3">▸ Scope</h4>
+        <p class="sobre-mim mb-5">
           The project covers data from 1997 to the present. The main data and
           variables analyzed include industries, countries, year/month of
-          export/import, Brazilian states, etc.
+          export/import, Brazilian states, etc. The visuals were created based
+          on references from the
+          <a href="https://comexstat.mdic.gov.br/pt/comex-vis" target="_blank"
+            >Comex Stat website</a
+          >.
         </p>
 
         <!-- Tecnologias usadas -->
-        <h4 class="mb-2">▸ Technologies used</h4>
-        <p class="sobre-mim mb-4">Power BI, M, DAX, Python, Docker.</p>
+        <h4 class="mb-3">▸ Technologies used</h4>
+        <p class="sobre-mim mb-5">Power BI, M, DAX, Python, Docker.</p>
+
+        <!-- Estrutura -->
+        <h4 class="mb-3">▸ Infrastructure</h4>
+        <p class="sobre-mim mb-5">
+          This was the infrastructure used, reducing data storage resources and
+          being functional.
+        </p>
+        <div class="gif-container mb-5">
+          <img
+            src="img/imp_exp_infra.gif"
+            alt="GIF animado de importação/exportação"
+            style="width: 400px; height: auto; display: block; margin: 0 auto"
+          />
+        </div>
 
         <!-- Desafios Iniciais -->
-        <h4 class="mb-2">▸ Initial Challenges</h4>
-        <p class="sobre-mim mb-4">
+        <h4 class="mb-3">▸ Initial Challenges</h4>
+        <p class="sobre-mim mb-5">
           I had to deal with large volumes of data, as the export and import
           tables contained millions of rows. Some spreadsheets came with
           insufficient columns/data.
         </p>
 
         <!-- Solução Implementada -->
-        <h4 class="mb-2">▸ Implemented Solution</h4>
-        <p class="sobre-mim mb-4">
+        <h4 class="mb-3">▸ Implemented Solution</h4>
+        <p class="sobre-mim mb-5">
           To address the data volume issue, I retrieved the .csv files directly
           from the government website without saving them locally, meaning that
           as the website updates the file, my dataset is automatically updated.
@@ -165,9 +183,27 @@
           every Sunday, using Docker and my personal database.
         </p>
 
-        <!-- Tecnologias usadas (repetido) -->
-        <h4 class="mb-2">▸ Technologies used</h4>
-        <p class="sobre-mim mb-4">Power BI, SQL, M, DAX, Python, Docker.</p>
+        <!-- Desrição das fontes de dados -->
+        <h4 class="mb-3">▸ Source Description</h4>
+        <p class="sobre-mim mb-5">
+          Public government databases are made available between the 5th and
+          10th of each month, containing data from the previous month. The
+          website can be found
+          <a
+            href="https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta"
+            target="_blank"
+            >here</a
+          >. Additionally, a data source was used to retrieve geographic data
+          for the choropleth map.
+
+          <!-- Qualidade dos dados -->
+        </p>
+
+        <h4 class="mb-3">▸ Data Quality</h4>
+        <p class="sobre-mim mb-5">
+          There were some missing values in the CGCE, ISIC, and ISIC_group
+          tables. However, these were corrected using Python and a database.
+        </p>
       </div>
     </section>
 
