@@ -1,9 +1,19 @@
 /* ESSE É UM ARQUIVO SEPARADO QUE SERVE PARA IMPOR O ESTILO DO CÓDIGO */ 
 
 .btn-custom {
-    background-color: #ba5e3b;
-    color: #fff;
-    /* Define a cor do texto para branco */
+    background-color: #ba5f3bd3;
+    color: #fff; 
+    font-size: 0.85rem; /* Diminui o tamanho do texto */
+    padding: 1px 5px; /* Reduz o espaço interno do botão */
+    border-radius: 5px; /* Mantém bordas arredondadas */
+}
+
+.btn-official-site {
+    background-color: #d1a546; /* Cor personalizada para o botão */
+}
+
+.btn-achievemtens {
+    background-color: #46b1d1; /* Cor personalizada para o botão */
 }
 
 .icon-container {
@@ -90,13 +100,15 @@ margin: 50px 0;
 .project-content {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaço entre imagem e texto */
+    gap: 25px; /* Espaço entre imagem e texto */
 }
 
 .project-img img {
     width: 100%;  /* Faz a imagem se ajustar ao contêiner */
-    max-width: 200px; /* Limite no desktop */
+    max-width: 260px; /* Limite no desktop */
     height: auto; /* Mantém a proporção */
+    border-radius: 15px; /* Arredonda as bordas */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18); /* Sombra leve para a direita */
 }
 
 .project-info {
@@ -148,18 +160,18 @@ text-align: justify;
 .project-links {
     display: flex;
     align-items: baseline; 
-    gap: 20px; 
+    gap: 10px; 
 }
 
 .project-link {
     font-size: 0.95rem;
-    color: #ba5e3b;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
 .second-link {
-    color: #ba5f3bcc;
+    color: #ffffff;
 }      
 
 /* Estilo do botão de tela cheia */
