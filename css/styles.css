@@ -107,7 +107,7 @@ margin: 50px 0;
     width: 100%;  /* Faz a imagem se ajustar ao contêiner */
     max-width: 260px; /* Limite no desktop */
     height: auto; /* Mantém a proporção */
-    border-radius: 15px; /* Arredonda as bordas */
+    border-radius: 10px; /* Arredonda as bordas */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18); /* Sombra leve para a direita */
 }
 
@@ -120,17 +120,24 @@ margin: 50px 0;
 @media (max-width: 768px) {
     .project-content {
         flex-direction: column; /* Empilha os elementos */
-        text-align: center; /* Centraliza o conteúdo */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .project-img {
+        text-align: left; /* Garante que a imagem fique à esquerda */
     }
 
     .project-img img {
         max-width: 80%; /* Evita que a imagem fique muito grande */
+        display: block; /* Evita que a imagem seja influenciada pelo alinhamento do texto */
+        margin-left: 0; /* Garante que fique colada na esquerda */
     }
 
     .project-info {
-        text-align: center;
+        text-align: left; /* Mantém o texto alinhado à esquerda */
     }
 }
+
 
 .project-title {
 font-size: 1.8rem;
