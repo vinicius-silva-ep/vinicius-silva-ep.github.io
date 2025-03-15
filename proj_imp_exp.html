@@ -158,9 +158,9 @@
         </p>
         <div class="gif-container mb-5">
           <img
-            src="img/imp_exp_infra.gif"
+            src="img/imp_exp/imp_exp_infra.gif"
             alt="GIF animado de importação/exportação"
-            style="width: 400px; height: auto; display: block; margin: 0 auto"
+            style="max-width: 60%; height: auto; display: block; margin: 0 auto"
           />
         </div>
 
@@ -181,6 +181,22 @@
           On the other hand, to solve the problem of missing information in some
           spreadsheets, I created an automation in Python to fetch the data
           every Sunday, using Docker and my personal database.
+          <br /><br />
+          To view the data extraction code, just click here:
+          <a
+            href="https://github.com/vinicius-silva-ep/vinicius-silva-ep.github.io"
+            class="btn btn-custom btn-sm"
+            target="_blank"
+          >
+            <img
+              src="img/github.png"
+              alt="Power BI Icon"
+              width="16"
+              height="16"
+              style="vertical-align: middle; margin-right: 1px"
+            />
+            Explore the repository about this project on Github
+          </a>
         </p>
 
         <!-- Desrição das fontes de dados -->
@@ -195,15 +211,36 @@
             >here</a
           >. Additionally, a data source was used to retrieve geographic data
           for the choropleth map.
-
-          <!-- Qualidade dos dados -->
         </p>
+
+        <!-- Qualidade dos dados -->
 
         <h4 class="mb-3">▸ Data Quality</h4>
         <p class="sobre-mim mb-5">
           There were some missing values in the CGCE, ISIC, and ISIC_group
           tables. However, these were corrected using Python and a database.
         </p>
+
+        <!-- Transformações de dados -->
+
+        <h4 class="mb-3">▸ Transformations Performed</h4>
+        <p class="sobre-mim mb-5">
+          Not many transformations were needed as the data from the government
+          website was already well-structured.
+        </p>
+      </div>
+
+      <!-- Modelo -->
+      <h4 class="mb-3">▸ Model</h4>
+      <p class="sobre-mim mb-5">
+        The model used was simple, but for some tables, a cross-filtering
+        approach was necessary.
+      </p>
+      <div class="gif-container mb-5">
+        <img
+          src="img/imp_exp/model.png"
+          style="max-width: 100%; height: auto; display: block; margin: 0 auto"
+        />
       </div>
     </section>
 
